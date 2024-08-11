@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    /* height: 130px; */
+    position: sticky;
+    top: -5px;
+    z-index: 10;
+    margin-top: -38px;
+    box-shadow: 0px 1px 10px 6px;
+}
+
+label.logo {
+    margin: 10px 60px;
+}
+
+
+#mainlogo {
+    height: 60px;
+    margin-left: 60px;
+}
+
+.citynm {
+    font-weight: 700;
+    font-size: x-small;
+    background-color: bisque;
+    letter-spacing: 7px;
+    padding-left: 15px;
+    margin-top: -11px;
+    color: black;
+}
+
+.schoolnm {
+    color: rgb(115, 51, 51);
+}
+
+
+nav ul {
+    float: right;
+    list-style-type: none;
+    margin-right: 2px;
+    margin-top: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 110px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    padding: 5px 20px;
+    font-weight: 20px;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid rgb(255, 230, 0);
+    text-decoration: none;
+    color: black;
+    
+}
+
+ul li a:hover {
+    cursor: pointer;
+}
+
+#checkbtn {
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    font-size: 30px;
+    color: rgb(96, 85, 68);
+    display: none;
+    margin-top: 30px;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~ul {
+    right: 0;
+}
+
+
+@media(max-width:340px) {
+    label.logo {
+        font-size: 26px;
+        margin-right: 0 50px;
+    }
+}
+
+@media(max-width:750px) {
+    nav ul {
+        display: none;
+    }
+
+    #checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        display: block;
+        right: -100%;
+        width: 50%;
+        height: 60vh;
+        top: 71px;
+        position: fixed;
+        transition: .5s;
+        background-color: rgb(255, 201, 163);
+        border-radius: 10px;
+        font-size: small;
+        box-shadow: 0px 0px 26px 10px;
+
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        line-height: 60px;
+        margin-top: 10px;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+
+    nav ul li a {
+        font-size: small;
+    }
+
+    label.logo {
+        margin: 5px 40px;
+        line-height: 80px;
+    }
+
+    nav {
+        height: 120px;
+    }
+
+    #mainlogo {
+        height: 50px;
+    }
+
+    .schoolnm {
+        font-size: 17px;
+        margin-top: -11px;
+        margin-left: 1px;
+    }
+
+    .citynm {
+        font-weight: 700;
+        font-size: xx-small;
+        background-color: bisque;
+        letter-spacing: 7px;
+        padding-left: 8px;
+        margin-top: -16px;
+        margin-left: -15px;
+    }
+}
+
+
+
+/* img start */
+
+
+
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #002147f6, rgba(18, 29, 152, 0.471));
+    z-index: 5;
+}
+
+.imgNmCon {
+    color: white;
+    margin-top: 120px;
+}
+
+#imgnm1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.logo-container {
+    position: relative;
+    padding-bottom: 13px;
+    width: 50%;
+    padding-left: 40px;
+    margin-top: 15px;
+}
+
+.imglogo::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 6px;
+    background-color: #f4b300;
+    animation: underlin 3s linear forwards;
+    margin-left: 20px;
+    border-radius: 50%;
+
+}
+
+#colorName {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+#colorText {
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+#discriptionDiv {
+    width: 50vw;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+#discriptionDiv-in {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#btnDiv {
+    margin-top: 50px;
+    padding-left: 140px;
+}
+
+.heroBtn {
+    border: none;
+    margin: 0px 10px;
+    height: 40px;
+    width: 160px;
+    background-color: #f4b300;
+    font-weight: 500;
+}
+
+.heroBtn:hover {
+    background-color: #ffdd7e
+}
+
+@keyframes underlin {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@media(max-width:750px) {
+    #imgnm1 {
+        font-size: medium;
+    }
+
+    .logo-container {
+        padding-bottom: 9px;
+        width: 60%;
+    }
+
+    .imgNmCon {
+        margin-top: 50px;
+    }
+
+    .imglogo::after {
+        height: 3px;
+    }
+
+    #colorName {
+        font-size: 11px;
+        font-weight: 400;
+    }
+
+    #colorText {
+        margin-top: 15px;
+        font-size: 11px;
+        font-weight: 400;
+        margin-left: 10px;
+    }
+
+    #discriptionDiv {
+        width: 80vw;
+        margin-top: 12px;
+        padding-left: 10px;
+    }
+
+    #discriptionDiv-in {
+        font-size: 6px;
+        font-weight: 200;
+    }
+
+    #btnDiv {
+        margin-top: 25px;
+        padding-left: 60px;
+        display: flex;
+    }
+
+    .heroBtn {
+        margin: 0px 6px;
+        height: 20px;
+        width: 60px;
+        font-weight: bold;
+        font-size: 6px;
+    }
+
+}
+
+
+/* //////////event con//////////////// */
+
+.eventDIV {
+    height: 60vh;
+    width: 100vw;
+    background-color: rgb(14, 22, 74);
+}
+
+.jsttwo {
+    height: 20vh;
+    width: 100vw;
+    background-color: rgb(14, 22, 74);
+    color: white;
+    text-align: center;
+    padding-top: 50px
+}
+
+.container-custom {
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px;
+    padding-top: 10px;
+}
+
+.img-container {
+    position: relative;
+    width: 32%;
+    height: 50%;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 15px;
+    padding: 60px;
+    text-align: center;
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+}
+
+@media(max-width:750px) {
+    .img-container {
+        height: 30%;
+    }
+
+    .container-custom {
+        padding: 0px 0px;
+    }
+
+    .overlay {
+        font-size: 6px;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .eventDIV {
+        height: 40vh;
+    }
+
+    .jsttwo {
+        height: 12vh;
+        padding-top: 40px
+    }
+
+    .jsttwo h1 {
+        font-size: medium;
+    }
+}
+
+
+
+/* /////////achiv and about //////*/
+.mainforabout {
+    display: flex;
+}
+
+.part {
+    height: 40vh;
+    width: 50vw;
+    padding: 10px 40px;
+}
+
+.h1abt {
+    color: orange;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    color: white;
+}
+
+.achiv {
+    height: 8vh;
+    width: 100%;
+    color: white;
+    padding-left: 50px;
+}
+
+.achiv svg {
+    height: 40px;
+    color: white;
+}
+
+@media(max-width:750px) {
+    .part {
+        padding: 5px 10px;
+    }
+
+    .h1abt {
+        color: orange;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    p {
+        color: white;
+        font-size: small;
+    }
+
+    .part img {
+        margin-top: 80px;
+    }
+
+    .achiv svg {
+        height: 30px;
+        color: white;
+        display: flex;
+    }
+}
+
+
+
+/* /////////////// gallary ////////////////// */
+.gallerymain {
+    height: 60vh;
+    width: 100vw;
+    background-color: rgb(16, 16, 79);
+    padding-top: 10px;
+}
+
+#carouselExampleAutoplaying {
+    max-width: 500px;
+    margin: auto;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.gallarynm {
+    height: 15vh;
+    width: 100vw;
+    background-color: rgb(16, 16, 79);
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    
+}
+
+@media(max-width:750px) {
+    .gallerymain {
+        height: 50vh;
+    }
+
+    .gallarynm {
+        height: 8vh;
+        width: 100vw;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+}
+
+/* ///////////////contct us////////////////// */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(16, 16, 79);
+}
+
+.contact-content {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.contact-info, .inquiry-form {
+    flex: 1;
+    min-width: 300px;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    margin-top: 20px;
+    box-shadow: 5px 6px 1px 5px orange;
+}
+
+.contact-info h2, .inquiry-form h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.inquiry-form label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.inquiry-form input, .inquiry-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.inquiry-form textarea {
+    height: 50px;
+    resize: vertical;
+}
+
+.inquiry-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.inquiry-form button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .contact-info, .inquiry-form {
+        flex: 1 1 100%;
+        margin-top: 10px;
+    }
+
+    .inquiry-form button {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-section {
+        padding: 10px;
+    }
+
+    .contact-info, .inquiry-form {
+        padding: 10px;
+    }
+
+    .inquiry-form textarea {
+        height: 100px;
+    }
+}
+
+
+
+
+/* ////////////////////fotter //////////////////// */
+.footer {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to top, #fffffff6, rgba(255, 209, 4, 0.112));
+}
+.footer .social-icons a {
+    color: #495057;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+.footer .social-icons a:hover {
+    color: #ffe600;
+}
+.footer .footer-links a {
+    color: #495057;
+    margin: 0 15px;
+    text-decoration: none;
+}
