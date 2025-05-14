@@ -1,2 +1,2 @@
 # Simple static web page
-using HTML,CSS,JS
+using HTML,CSS, JS
